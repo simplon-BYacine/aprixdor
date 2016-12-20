@@ -1,0 +1,56 @@
+<style>
+	.sprite-assu {
+					background-image: url(assets/images/spritesheet-assu.png);
+					background-repeat: no-repeat;
+					display: block;
+					width:65px; 
+					height:75px; 
+					padding:5px; 
+					transition: all .2s linear;
+	}
+
+	.sprite-assu-icon1 { background-position: 0 0;}
+
+	.sprite-assu-icon2 { background-position: -600px 0;}
+
+	.sprite-assu-icon3 { background-position: -675px 0;}
+
+	.sprite-assu-icon4 { background-position: -750px 0;}
+
+	.sprite-assu-icon5 { background-position: -825px 0;}
+
+	.sprite-assu-icon6 { background-position: -900px 0;}
+
+	.sprite-assu-icon7 { background-position: -975px 0;}
+
+	.sprite-assu-icon8 { background-position: -1050px 0;}
+
+	.sprite-assu-icon9 { background-position: -75px 0;}
+
+	.sprite-assu-icon10 { background-position: -150px 0;}
+
+	.sprite-assu-icon11 { background-position: -225px 0;}
+
+	.sprite-assu-icon12 { background-position: -300px 0;}
+
+	.sprite-assu-icon13 { background-position: -375px 0;}
+
+	.sprite-assu-icon14 { background-position: -450px 0;}
+
+	.sprite-assu-icon15 { background-position: -525px 0;}
+</style>
+
+
+<div class="assu">
+	<div class="swiper-container2">
+		<div class="assu-title">
+			<div class="line"></div>
+				<h2>Agrée Assurance</h2>
+		</div>
+        <div class="swiper-wrapper" style="height:auto; margin-top: 50px">
+        		<div class="swiper-slide" style="background-position: center; background-size: cover; background: none; width: 100px; height: 100px;" *ngFor="let icon of tab_sprite">
+			    	<i class="{{icon}}"></i>
+			    </div>
+        </div>
+	</div>
+</div>

@@ -1,3 +1,34 @@
-<h1>
-  {{title}}
-</h1>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="drawer">
+      <div class="menu" (click)="activeMenu($event)">
+        <span class="menu-global menu-top"></span>
+        <span class="menu-global menu-middle"></span>
+        <span class="menu-global menu-bottom"></span>
+      </div>
+    </div>
+    <app-header style="z-index: 3;background-color: #2196f3;"></app-header>
+    <app-callbar class="mdl-cell--hide-desktop" style="z-index: 3"></app-callbar>
+    <div id="navbar-mobile" class="navbar-mobile mdl-cell--hide-desktop">
+      <a>Serrurerie</a>
+      <a>Plomberie</a>
+      <a>Contactez-nous</a>
+      <p>24h/7j - Devis Gratuit</p>
+    </div>
+  </header>
+
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+
+  <main class="mdl-layout__content">
+    <app-body></app-body>
+    <app-footer></app-footer>
+  </main>
+</div>
